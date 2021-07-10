@@ -3,11 +3,25 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.json([{
+  res.json([
+    {
       name: "Bob",
       email: "bob@gmail.com"
-  }])
-})
+    },
+    {
+      name: "Tumie",
+      email: "tumie@gmail.com"
+    },
+    {
+      name: "Peter",
+      email: "peter@gmail.com"
+    },
+    {
+      name: "Kemi",
+      email: "kemi@gmail.com"
+    }
+
+])})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
